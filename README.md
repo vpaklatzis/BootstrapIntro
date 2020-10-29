@@ -1,0 +1,1 @@
+This is a follow-along project, part of the course "Front-End Web UI Frameworks and Tools: Bootstrap 4", which is part of a series of courses that the Hong Kong University of Science and Technology provides through Coursera. The series is called "Full Stack Web and Multiplatform Mobile App Development".
