@@ -38,6 +38,13 @@ body {
     background: #512DA8;
 }
 
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
 #copyright-container {
     padding-top: 30px;
 }
