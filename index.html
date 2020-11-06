@@ -29,7 +29,8 @@
                     <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <!-- Task 1 & 3 -->
+                    <a id="loginbutton">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -87,13 +88,12 @@
                 </div>
         
                 <div class="col-12 col-sm align-self-center">
-                    <!-- Task 3 -->
-                    <a class="btn btn-sm btn-block btn-warning" role="button" data-toggle="modal" data-target="#reservetablemodal">Reserve Table</a>
+                    <!-- Task 1 & 2 -->
+                    <a class="btn btn-sm btn-block btn-warning" id="reservetablebutton" role="button">Reserve Table</a>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Task 1 -->
     <div id="reservetablemodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -140,7 +140,6 @@
                                 </div>
                             </div>  
                         </div>
-                        <!-- Task 2 -->
                         <div class="form-group row">
                             <label for="smokers" class="col-md-2 col-form-label">Section</label>
                             <div class="col-md-10">
@@ -341,7 +340,16 @@
             });
         });
     </script>
-    <!-- Task 3 -->
+    <!-- Task 2 & 3 -->
+    <script>
+        $('#reservetablebutton').click(function () {
+            $('#reservetablemodal').modal('toggle');
+        });
+
+        $('#loginbutton').click(function () {
+            $('#loginModal').modal('toggle');
+        });
+    </script>
 </body>
 
 </html>
