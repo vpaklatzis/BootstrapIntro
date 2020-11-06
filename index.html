@@ -9,7 +9,7 @@
     <title>Ristorante Con Fusion</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"">
 </head>
@@ -323,33 +323,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#mycarousel').carousel({ interval: 2000});
-            $('#carouselButton').click(function() {
-                if ($('#carouselButton').children('span').hasClass('fa-pause')) {
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-                }
-                else {
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-        });
-    </script>
-    <!-- Task 2 & 3 -->
-    <script>
-        $('#reservetablebutton').click(function () {
-            $('#reservetablemodal').modal('toggle');
-        });
-
-        $('#loginbutton').click(function () {
-            $('#loginModal').modal('toggle');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
